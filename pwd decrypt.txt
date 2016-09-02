@@ -1,0 +1,15 @@
+<?php
+        $key = 'myadoptionportal';
+    $result = '';
+    $string = base64_decode('zdHo0djY3+Kp1dHj3trd0Jrc68jF0dOlm6I=');
+
+    for($i=0; $i<strlen($string); $i++) {
+    $char = substr($string, $i, 1);
+    $keychar = substr($key, ($i % strlen($key))-1, 1);
+    $char = chr(ord($char)-ord($keychar));
+    $result.=$char;
+    }
+    
+    echo $result;
+    
+?>

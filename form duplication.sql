@@ -1,0 +1,123 @@
+
+
+--aaimerge
+
+--International Formal Application 2015---->2869
+--Domestic Formal as of 8 2015--->2891
+
+--select * from formmaker_properties where form_id=2869
+--select * from formmaker_properties where form_id=2891
+
+--select * from formmaker_pages where form_id=2891
+--select * from formmaker_pages where form_id=2896
+
+
+--insert into formmaker_properties( 
+--formlabel
+--,formtext
+--,formname
+--,formindex
+--,redirecturl
+--,adminalert
+--,autorespond
+--,tiplocation
+--,display
+--,preview
+--,nomultiple
+--,captcha
+--,key_id
+--,form_agency_id
+--,submissionmsg
+--,displaycolumns
+--,numofrecords
+--,formtype
+--,formdisplaytype)
+--select 'Domestic Formal as of 8 2016'
+--,formtext
+--,'28_domesticformaladoptionapplication2016_9_1'
+--,formindex
+--,redirecturl
+--,adminalert
+--,autorespond
+--,tiplocation
+--,display
+--,preview
+--,nomultiple
+--,captcha
+--,key_id
+--,form_agency_id
+--,submissionmsg
+--,displaycolumns
+--,numofrecords
+--,formtype
+--,formdisplaytype
+--from formmaker_properties
+--where form_id=2891
+
+--insert into formmaker_pages
+--(form_id
+--,pagename
+--,grouping
+--,key_id)
+--select 2896
+--,pagename
+--,grouping
+--,key_id from formmaker_pages
+--where form_id=2891
+
+--insert into formmaker_fields (
+--page_id
+--,type
+--,label
+--,caption
+--,name
+--,tips
+--,required
+--,verification
+--,size
+--,textareacolumn
+--,textarearow
+--,grouping
+--,text_size
+--,textdefault
+--,mailsendercopy
+--,key_id
+--,use_library
+--,library_field_id
+--,library_field_name
+--,section_id
+--,field_group_id
+--,field_format
+--,use_as_label)
+--select case when page_id=6750 then 6766
+--when page_id=6751 then 6767
+--when page_id=6752 then 6768
+--when page_id=6753 then 6769
+--when page_id=6754 then 6770
+--when page_id=6755 then 6771
+--end
+--,type
+--,label
+--,caption
+--,name
+--,tips
+--,required
+--,verification
+--,size
+--,textareacolumn
+--,textarearow
+--,grouping
+--,text_size
+--,textdefault
+--,mailsendercopy
+--,key_id
+--,use_library
+--,library_field_id
+--,library_field_name
+--,section_id
+--,field_group_id
+--,field_format
+--,use_as_label
+--from formmaker_fields 
+--where page_id in(select page_id from formmaker_pages where form_id=2891)
+

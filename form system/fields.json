@@ -1,0 +1,237 @@
+{
+  "text": {
+    "type": "text",
+    "label": "Text",
+    "name": "text_",
+    "placeholder": "Enter your text!",
+    "help_text":"",
+    "default": "",
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "greybar": {
+    "type": "greybar",
+    "name": "greybar_",
+
+    "columnsize": 12,
+    "height":10,
+    "bg":"#f5f5f5"
+  },
+  "email": {
+    "type": "email",
+    "label": "Email",
+    "name": "email_",
+    "placeholder": "Enter your email",
+    "default": "",
+
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "editor": {
+    "type": "editor",
+    "label": "Editor",
+    "name": "editor_",
+    "placeholder": "Enter your text!",
+    "help_text":"",
+    "default": "",
+
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "phone": {
+    "type": "phone",
+    "label": "Phone",
+    "name": "phone_",
+    "placeholder": "Enter your phone number!",
+
+    "default": "",
+    "mask":"(999) 999-9999",
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "textarea": {
+    "type": "textarea",
+    "label": "Textarea",
+    "name": "textarea_",
+    "placeholder": "Enter your details",
+
+    "default": "",
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "radio": {
+    "type": "radio",
+    "label": "Radio",
+    "name": "radio_",
+    "default": "",
+
+    "inline": "false",
+    "columnsize": 12,
+    "items": [{
+      "label": "Radio",
+      "value": "radio"
+    }]
+  },
+  "checkbox": {
+    "type": "checkbox",
+    "label": "Checkbox",
+    "name": "chackbox_",
+    "inline": "false",
+    "default": "",
+
+    "columnsize": 12,
+    "items": [{
+      "label": "Checkbox",
+      "value": "checkbox"
+    }]
+  },
+  "select": {
+    "type": "select",
+    "name": "select_",
+    "label":"Select",
+    "placeholder": "--Select--",
+    "default": "",
+
+    "columnsize": 12,
+    "items": [{
+      "label": "Option 1",
+      "value": "option_1"
+    }]
+  },
+  "date": {
+    "type": "date",
+    "label":"Date",
+    "name": "date_1",
+    "format": "dd-MMMM-yyyy",
+    "default": "",
+
+    "columnsize": 12
+  },
+  "time": {
+    "type": "time",
+    "label":"Time",
+    "name": "time_",
+    "default": "",
+
+    "hstep": "1",
+    "mstep": "1",
+    "columnsize": 12,
+    "ismeridian": "false"
+  },
+  "header": {
+    "type": "header",
+    "name": "header_",
+    "label": "Header",
+    "size": "16",
+    "columnsize": 12,
+    "html_code":"Header ",
+    "color": ""
+  },
+  "file": {
+    "type": "file",
+    "label": "File",
+    "name": "file_",
+    "columnsize": 12,
+
+    "dropzoneConfig": {
+      "addRemoveLinks": true,
+      "url": "/api/v1/file",
+      "maxFilesize": 10,
+      "filesizeBase": 1024,
+      "acceptedFiles": "",
+      "dictDefaultMessage": "Drop files here or click to upload.",
+      "dictFallbackMessage": "Your browser does not support drag and drop file uploads."
+    }
+  },
+  "empty": {
+    "type": "empty",
+    "name": "empty_1",
+    "columnsize": 12
+  },
+  "relation": {
+    "type": "relation",
+    "label":"Relation",
+    "name": "relation_",
+    "columnsize": 12,
+    "subform_ids": [],
+    "subforms": [],
+    "data": [],
+    "grid":{
+      "fname":"Name",
+      "type":"Relation Type",
+      "subtype":"Relation SubType",
+      "who":"Who",
+      "start_date":"Start Date",
+      "end_date":"End Date"
+    }
+  },
+  "price": {
+    "type": "price",
+    "label": "Price",
+    "name": "price_",
+    "placeholder": "Enter your Price!",
+    "help_text":"",
+    "default": "",
+
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "total_price": {
+    "type": "total_price",
+    "label": "Total Price",
+    "name": "total_price_",
+    "placeholder": "Enter your Total Price!",
+    "help_text":"",
+    "default": "",
+
+    "validate": {
+      "require": "false",
+      "minlenght": "undefined",
+      "maxlenght": "undefined"
+    },
+    "columnsize": 12
+  },
+  "signature":{
+      "type":"signature",
+      "label": "Signature",
+      "name":"signature_",
+
+      "columnsize": 12,
+      "position":"left"
+  },
+  "image":{
+      "type":"image",
+      "name":"",
+
+      "columnsize": 12,
+      "width":100,
+      "height":100,
+      "src":"data:image/jpeg;base64,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"
+  }
+
+
+}
