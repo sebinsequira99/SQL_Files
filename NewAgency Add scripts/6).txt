@@ -1,0 +1,4 @@
+
+tables missing in mapmachformbase
+
+copy from mapmachformHHA to mapmachformBASE
