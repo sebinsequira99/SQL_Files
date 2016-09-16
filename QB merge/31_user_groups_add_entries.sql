@@ -1,0 +1,62 @@
+
+
+--mapfac..rel_lkp_relationshipsubtype
+--mapfac..rel_lkp_relationshiptype where RelationshipSubTypeId=-100
+--mapfac..user_groups where grouprole_sub_type_id=-100
+--mapfcs..user_groups where grouprole_sub_type_id=9
+--mapfcs..rel_lkp_relationshiptype where RelationshipSubTypeId=9
+
+--insert into mapfcs..user_groups(
+--main_id
+--,agency_id
+--,group_name
+--,created_date
+--,description
+--,phase_permission
+--,event_permission
+--,case_worker
+--,AIRSContactTypeId
+--,message_id
+--,settings_id
+--,group_type_id
+--,grouprole_sub_type_id
+--,grouprole_sub_type
+--,grouprole_type_id
+--,grouprole_type
+--,default_cws
+--,default_email
+--,Default_Group)
+--select main_id
+--,234
+--,group_name
+--,created_date 
+--,description
+--,phase_permission	
+--,event_permission	
+--,case_worker	
+--,AIRSContactTypeId	
+--,message_id	
+--,settings_id	
+--,group_type_id	
+--,9	
+--,'Adoption'	
+--,case when grouprole_type_id=-101
+--then 92
+--when grouprole_type_id=-102
+--then 91
+--when grouprole_type_id=-104
+--then 93
+--end
+--,case when grouprole_type_id=-101
+--then 'Adoptive Parent'
+--when grouprole_type_id=-102
+--then 'Birth Mother'
+--when grouprole_type_id=-104
+--then 'Adoptive Child'
+--end
+--,default_cws	
+--,default_email
+--,Default_Group	
+--from mapfac..user_groups where grouprole_sub_type_id=-100
+
+
