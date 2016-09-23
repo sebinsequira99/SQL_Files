@@ -1,0 +1,28 @@
+
+--UPDATE a
+--SET a.GroupNames=STUFF((SELECT distinct ',' + g.group_name
+--							  FROM MAPNLA..user_effectivedate r
+--							  inner join MAPNLA..user_groups g
+--							  on r.group_id=g.group_id
+--							  inner join MAPNLA..user_accounts u
+--							  on r.user_id=u.user_id
+--							  WHERE a.username = u.username and r.eff_status='Y'
+--							  FOR XML PATH('')
+--							  ,TYPE).value('.', 'NVARCHAR(MAX)')
+--							  ,1,1,'')
+--FROM ##result a
+--where AgencyName='MAPNLA'
+
+--UPDATE a
+--SET a.AssignedCWs=STUFF((SELECT distinct ',' + ua.first_name+' '+ua.last_name
+--							  FROM MAPNLA..caseworker_client cc
+--							  inner join MAPNLA..user_accounts ua
+--							  on cc.caseworkerid=ua.user_id
+--							  inner join MAPNLA..user_accounts uu
+--							  on cc.parentid=uu.user_id
+--							  WHERE a.username = uu.username
+--							  FOR XML PATH('')
+--							  ,TYPE).value('.', 'NVARCHAR(MAX)')
+--							  ,1,1,'')
+--FROM ##result a
+--where AgencyName='MAPNLA'
