@@ -1,0 +1,120 @@
+
+
+mapfcs
+
+--select * into formmaker_234_preliminaryapplication from mapfac_old_test..formmaker_77_preliminaryapplication
+--select * into formmaker_234_preapplicationpayment from mapfac_old_test..formmaker_77_preapplicationpayment
+--select * into formmaker_234_technologyfee from mapfac_old_test..formmaker_77_technologyfee
+--select * into formmaker_234_applicationchecklistforinternationaladoptions from mapfac_old_test..formmaker_77_applicationchecklistforinternationaladoptions
+--select * into formmaker_234_adoptionserviceagreement from mapfac_old_test..formmaker_77_adoptionserviceagreement
+--select * into formmaker_234_adoptionandpregnancy from mapfac_old_test..formmaker_77_adoptionandpregnancy
+--select * into formmaker_234_topicsfordiscussion from mapfac_old_test..formmaker_77_topicsfordiscussion
+--select * into formmaker_234_behaviouralmanagementforfosterandadoptiveparents from mapfac_old_test..formmaker_77_behaviouralmanagementforfosterandadoptiveparents
+--select * into formmaker_234_instructionsforreleaseofinformationforms from mapfac_old_test..formmaker_77_instructionsforreleaseofinformationforms
+--select * into formmaker_234_trainingrequirements from mapfac_old_test..formmaker_77_trainingrequirements
+--select * into formmaker_234_topicsfordiscussion_1 from mapfac_old_test..formmaker_77_topicsfordiscussion_1
+--select * into formmaker_234_applicationfee from mapfac_old_test..formmaker_77_applicationfee
+--select * into formmaker_234_homestudyfee from mapfac_old_test..formmaker_77_homestudyfee
+--select * into formmaker_234_standardsofconduct from mapfac_old_test..formmaker_77_standardsofconduct
+--select * into formmaker_234_personalrefrence from mapfac_old_test..formmaker_77_personalrefrence
+--select * into formmaker_234_pregnancyandfamilyleavepolicy from mapfac_old_test..formmaker_77_pregnancyandfamilyleavepolicy
+--select * into formmaker_234_referenceletterguidesheet from mapfac_old_test..formmaker_77_referenceletterguidesheet
+--select * into formmaker_234_releaseofinformationadoptionplacement from mapfac_old_test..formmaker_77_releaseofinformationadoptionplacement
+--select * into formmaker_234_releaseofinformationhsdisclosure from mapfac_old_test..formmaker_77_releaseofinformationhsdisclosure
+--select * into formmaker_234_releaseofinformationmedicaldisclosure from mapfac_old_test..formmaker_77_releaseofinformationmedicaldisclosure
+--select * into formmaker_234_releaseofinformationadoptionplacementagencyorattorney from mapfac_old_test..formmaker_77_releaseofinformationadoptionplacementagencyorattorney
+--select * into formmaker_234_complaintprocess from mapfac_old_test..formmaker_77_complaintprocess
+--select * into formmaker_234_employerreference from mapfac_old_test..formmaker_77_employerreference
+--select * into formmaker_234_informationreceivedacknowledgemnt from mapfac_old_test..formmaker_77_informationreceivedacknowledgemnt
+--select * into formmaker_234_authorizationforreleaseofconfidentialinformation from mapfac_old_test..formmaker_77_authorizationforreleaseofconfidentialinformation
+--select * into formmaker_234_checklistoftopicsfordiscussion from mapfac_old_test..formmaker_77_checklistoftopicsfordiscussion
+--select * into formmaker_234_formalapplicationchecklistforinternationaladoption from mapfac_old_test..formmaker_77_formalapplicationchecklistforinternationaladoption
+--select * into formmaker_234_formalapplicationchecklistfordomesticadoption from mapfac_old_test..formmaker_77_formalapplicationchecklistfordomesticadoption
+--select * into formmaker_234_formalapplication_1 from mapfac_old_test..formmaker_77_formalapplication_1
+--select * into formmaker_234_adoptiveapplicantfinancialstatement from mapfac_old_test..formmaker_77_adoptiveapplicantfinancialstatement
+--select * into formmaker_234_chinaprogramfeepaymentschedule from mapfac_old_test..formmaker_77_chinaprogramfeepaymentschedule
+--select * into formmaker_234_checklist from mapfac_old_test..formmaker_77_checklist
+--select * into formmaker_234_currentstateofresidency from mapfac_old_test..formmaker_77_currentstateofresidency
+--select * into formmaker_234_testfac from mapfac_old_test..formmaker_77_testfac
+--select * into formmaker_234_applicationchecklistfordomesticadoptions from mapfac_old_test..formmaker_77_applicationchecklistfordomesticadoptions
+--select * into formmaker_234_affidavitofhealthinsurancecoverage from mapfac_old_test..formmaker_77_affidavitofhealthinsurancecoverage
+--select * into formmaker_234_releaseofinformation from mapfac_old_test..formmaker_77_releaseofinformation
+--select * into formmaker_234_applicantfinancialstatement from mapfac_old_test..formmaker_77_applicantfinancialstatement
+--select * into formmaker_234_ohiodomestichomestudyfee from mapfac_old_test..formmaker_77_ohiodomestichomestudyfee
+--select * into formmaker_234_domestichomestudyfee from mapfac_old_test..formmaker_77_domestichomestudyfee
+--select * into formmaker_234_disclosuredutytodisclosedutyofcandor from mapfac_old_test..formmaker_77_disclosuredutytodisclosedutyofcandor
+--select * into formmaker_234_applicationchecklistfordhsdomesticadoptionsmaps from mapfac_old_test..formmaker_77_applicationchecklistfordhsdomesticadoptionsmaps
+--select * into formmaker_234_adoptionapplication from mapfac_old_test..formmaker_77_adoptionapplication
+--select * into formmaker_234_medicalstatementforfosterhomelicensingadoption from mapfac_old_test..formmaker_77_medicalstatementforfosterhomelicensingadoption
+--select * into formmaker__professionalreference from mapfac_old_test..formmaker__professionalreference
+--select * into formmaker_234_personalreferenceletter from mapfac_old_test..formmaker_77_personalreferenceletter
+--select * into formmaker_234_affidavitofhealthinsurancecoverage_1 from mapfac_old_test..formmaker_77_affidavitofhealthinsurancecoverage_1
+--select * into formmaker_234_notificationandauthorization from mapfac_old_test..formmaker_77_notificationandauthorization
+--select * into formmaker_234_childabuseregistrychecks from mapfac_old_test..formmaker_77_childabuseregistrychecks
+--select * into formmaker_234_applicantfinancialstatement_1 from mapfac_old_test..formmaker_77_applicantfinancialstatement_1
+--select * into formmaker_234_licensingrecordclearancerequest from mapfac_old_test..formmaker_77_licensingrecordclearancerequest
+--select * into formmaker_234_echeckfeeteting from mapfac_old_test..formmaker_77_echeckfeeteting
+--select * into formmaker_234_applicantfinancialstatement_1_1 from mapfac_old_test..formmaker_77_applicantfinancialstatement_1_1
+--select * into formmaker_234_maretechnologyfee from mapfac_old_test..formmaker_77_maretechnologyfee
+--select * into formmaker_234_testmediaform from mapfac_old_test..formmaker_77_testmediaform
+--select * into formmaker_234_testform from mapfac_old_test..formmaker_77_testform
+--select * into formmaker_234_trainingrequirementsodjfshagueohfcs from mapfac_old_test..formmaker_77_trainingrequirementsodjfshagueohfcs
+
+
+--update formmaker_234_preliminaryapplication set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_preapplicationpayment set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_technologyfee set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicationchecklistforinternationaladoptions set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_adoptionserviceagreement set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_adoptionandpregnancy set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_topicsfordiscussion set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_behaviouralmanagementforfosterandadoptiveparents set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_instructionsforreleaseofinformationforms set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_trainingrequirements set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_topicsfordiscussion_1 set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicationfee set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_homestudyfee set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_standardsofconduct set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_personalrefrence set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_pregnancyandfamilyleavepolicy set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_referenceletterguidesheet set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_releaseofinformationadoptionplacement set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_releaseofinformationhsdisclosure set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_releaseofinformationmedicaldisclosure set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_releaseofinformationadoptionplacementagencyorattorney set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_complaintprocess set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_employerreference set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_informationreceivedacknowledgemnt set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_authorizationforreleaseofconfidentialinformation set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_checklistoftopicsfordiscussion set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_formalapplicationchecklistforinternationaladoption set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_formalapplicationchecklistfordomesticadoption set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_formalapplication_1 set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_adoptiveapplicantfinancialstatement set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_chinaprogramfeepaymentschedule set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_checklist set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_currentstateofresidency set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_testfac set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicationchecklistfordomesticadoptions set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_affidavitofhealthinsurancecoverage set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_releaseofinformation set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicantfinancialstatement set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_ohiodomestichomestudyfee set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_domestichomestudyfee set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_disclosuredutytodisclosedutyofcandor set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicationchecklistfordhsdomesticadoptionsmaps set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_adoptionapplication set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_medicalstatementforfosterhomelicensingadoption set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker__professionalreference set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_personalreferenceletter set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_affidavitofhealthinsurancecoverage_1 set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_notificationandauthorization set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_childabuseregistrychecks set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicantfinancialstatement_1 set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_licensingrecordclearancerequest set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_echeckfeeteting set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_applicantfinancialstatement_1_1 set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_maretechnologyfee set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_testmediaform set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_testform set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id
+--update formmaker_234_trainingrequirementsodjfshagueohfcs set connectionid=100000+connectionid,connid=-1*(100000+abs(connid)),user_id=100000+user_id

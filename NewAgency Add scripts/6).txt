@@ -1,4 +1,6 @@
 
-tables missing in mapmachformbase
+1)tables missing in mapmachformbase
 
 copy from mapmachformHHA to mapmachformBASE
+
+2)update user_id in and ap_forms

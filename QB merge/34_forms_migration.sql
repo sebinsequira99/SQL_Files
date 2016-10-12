@@ -1,0 +1,276 @@
+
+
+mapfcs
+
+--set identity_insert formmaker_properties on
+
+--insert into formmaker_properties(form_id
+--,formlabel
+--,formtext
+--,formname
+--,formindex
+--,redirecturl
+--,adminalert
+--,autorespond
+--,tiplocation
+--,display
+--,preview
+--,nomultiple
+--,captcha
+--,key_id
+--,form_agency_id
+--,submissionmsg
+--,displaycolumns
+--,numofrecords
+--,formtype
+--,formdisplaytype)
+--select form_id
+--,formlabel
+--,formtext
+--,replace(formname,'77','234')
+--,formindex
+--,redirecturl
+--,adminalert
+--,autorespond
+--,tiplocation
+--,display
+--,preview
+--,nomultiple
+--,captcha
+--,key_id
+--,234
+--,submissionmsg
+--,displaycolumns
+--,numofrecords
+--,formtype
+--,formdisplaytype
+--from mapfac_old_test..formmaker_properties
+
+--set identity_insert formmaker_properties off
+
+formmaker_pages
+
+--set identity_insert formmaker_pages on
+
+--insert into formmaker_pages(page_id
+--,form_id
+--,pagename
+--,grouping
+--,key_id)
+--select page_id
+--,form_id
+--,pagename
+--,grouping
+--,key_id
+--from mapfac_old_test..formmaker_pages
+
+--set identity_insert formmaker_pages off
+
+formmaker_fields
+
+--set identity_insert formmaker_fields on
+
+--insert into formmaker_fields(field_id
+--,page_id
+--,type
+--,label
+--,caption
+--,name
+--,tips
+--,required
+--,verification
+--,size
+--,textareacolumn
+--,textarearow
+--,grouping
+--,text_size
+--,textdefault
+--,mailsendercopy
+--,key_id
+--,use_library
+--,library_field_id
+--,library_field_name
+--,section_id
+--,field_group_id
+--,field_format
+--,use_as_label)
+--select field_id
+--,page_id
+--,type
+--,label
+--,caption
+--,name
+--,tips
+--,required
+--,verification
+--,size
+--,textareacolumn
+--,textarearow
+--,grouping
+--,text_size
+--,textdefault
+--,mailsendercopy
+--,key_id
+--,use_library
+--,library_field_id
+--,library_field_name
+--,section_id
+--,field_group_id
+--,field_format
+--,use_as_label
+--from mapfac_old_test..formmaker_fields
+--where field_id not in(
+--151711
+--,151712
+--,151713
+--,151714
+--,151715
+--,151716
+--,151717
+--,151718
+--,151719
+--,151720
+--,151721
+--,151722
+--,151723
+--,151724)
+
+--set identity_insert formmaker_fields off
+
+--insert into formmaker_fields(
+--page_id
+--,type
+--,label
+--,caption
+--,name
+--,tips
+--,required
+--,verification
+--,size
+--,textareacolumn
+--,textarearow
+--,grouping
+--,text_size
+--,textdefault
+--,mailsendercopy
+--,key_id
+--,use_library
+--,library_field_id
+--,library_field_name
+--,section_id
+--,field_group_id
+--,field_format
+--,use_as_label)
+--select 
+--page_id
+--,type
+--,label
+--,caption
+--,name
+--,tips
+--,required
+--,verification
+--,size
+--,textareacolumn
+--,textarearow
+--,grouping
+--,text_size
+--,textdefault
+--,mailsendercopy
+--,key_id
+--,use_library
+--,library_field_id
+--,library_field_name
+--,section_id
+--,field_group_id
+--,field_format
+--,use_as_label
+--from mapfac_old_test..formmaker_fields
+--where field_id in(
+--151711
+--,151712
+--,151713
+--,151714
+--,151715
+--,151716
+--,151717
+--,151718
+--,151719
+--,151720
+--,151721
+--,151722
+--,151723
+--,151724)
+
+formmaker_fieldoptions
+
+--insert into formmaker_fieldoptions(
+--field_id
+--,optionname
+--,asdefault
+--,empty
+--,key_id)
+--select field_id
+--,optionname
+--,asdefault
+--,empty
+--,key_id
+--from mapfac_old_test..formmaker_fieldoptions
+--where field_id not in(
+--151711
+--,151712
+--,151713
+--,151714
+--,151715
+--,151716
+--,151717
+--,151718
+--,151719
+--,151720
+--,151721
+--,151722
+--,151723
+--,151724)
+
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'726','897')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'727','898')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'728','899')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'747','900')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'748','901')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'788','902')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'864','903')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'868','904')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'869','905')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'870','906')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'879','907')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'880','908')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'881','909')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'883','910')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'884','911')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'886','912')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'887','913')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'888','914')
+--update mapfcs..formmaker_taskstatus
+--set groupid=replace(cast(groupid as varchar(max)),'889','915')
+
+--update mapfcs..formmaker_taskstatus 
+--set connid=-(connid)
+--where connid>100000
