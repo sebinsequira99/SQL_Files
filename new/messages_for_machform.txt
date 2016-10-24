@@ -1,0 +1,22 @@
+
+INSERT INTO user_message_modules (module) VALUES ('Machform')
+
+INSERT INTO user_message_sub_module (module_id, module, temp_name, temp_code, temp_var, int_not, ext_not, agency_not, message_not, assigned_caseworker, caseworker_id)
+VALUES (9, 'Machform','ACCOUNT_ON_AGENCY_APPROVAL','account_on_agency_approval','[[name]]',1,1,1,1,1,1)
+
+
+INSERT INTO user_message_sub_module (module_id, module, temp_name, temp_code, temp_var, int_not, ext_not, agency_not, message_not, assigned_caseworker, caseworker_id)
+VALUES (9, 'Machform','EMAIL_NOTIFICATION_ON_FURTHER_INQUIRY','email_notification_on_further_inquiry','[[name]],[[here]]',1,1,1,1,1,1)
+
+INSERT INTO user_message_sub_module (module_id, module, temp_name, temp_code, temp_var, int_not, ext_not, agency_not, message_not, assigned_caseworker, caseworker_id)
+VALUES (9, 'Machform','USER_ALREADY_EXISTS_ON_INQUIRY_APPROVAL','user_already_exists_on_inquiry_approval','[[name]],[[user]]',1,1,1,1,1,1)
+
+
+INSERT INTO user_messages_template (agency_id,template_code,template_subject,template_message)
+VALUES((SELECT agency_id FROM user_agencies WHERE mainRecord = 1),'account_on_agency_approval','Your MyAdoptionPortal Account Will Be Created On Agnecy Appoval','<p>Dear [[name]],</p><p>Your account will be created in myadoptionportal.com, based on the inquiry after the agency approval.</p><p>Regards</p>')
+
+INSERT INTO user_messages_template (agency_id,template_code,template_subject,template_message)
+VALUES((SELECT agency_id FROM user_agencies WHERE mainRecord = 1),'email_notification_on_further_inquiry','Your Account Already Exists','<p>Dear [[name]],</p><p>We have already found you have a username (Email) within the system.   Please login using the userid and password. If you cannot remember your password then you can reset it [[here]].</p><p>Regards</p>')
+
+INSERT INTO user_messages_template (agency_id,template_code,template_subject,template_message)
+VALUES((SELECT agency_id FROM user_agencies WHERE mainRecord = 1),'user_already_exists_on_inquiry_approval','Inquired User Already Available In Agency','<p>Dear [[name]],</p><p>[[user]] is already available within the system.</p><p>Regards</p>')

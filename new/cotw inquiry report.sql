@@ -1,9 +1,14 @@
 
 
-use mapcow
+CREATE PROC usp_load_stagingtbl_inquiryrpt
+AS
+BEGIN
 
 IF exists (select 1 from sys.objects where name='StgTbl_InquiryRpt' and type='u')
 DROP TABLE StgTbl_InquiryRpt;
+
+IF exists (select 1 from sys.objects where name='StgTbl_InquiryFormsRpt' and type='u')
+DROP TABLE StgTbl_InquiryFormsRpt;
 
 SELECT i.inquiry_id
       ,i.agency_id
@@ -25,8 +30,6 @@ ADD contactid int
 ,GroupName varchar(max)
 ,userID int
 ,CaseNO varchar(200)
-
-GO
 
 UPDATE I
 SET I.contactid=c.contactid
@@ -74,9 +77,6 @@ on r.relationshiptypeid=rl.relationshiptypeid
 INNER JOIN rel_lkp_relationshipsubtype rs
 on rl.relationshipsubtypeid=rs.relationshipsubtypeid
 WHERE rs.Rel_SubType_isProgram=1 and i.displayname is null
-
-
-drop table #result,#main
 
 select r.displayname
 ,ft.task_id
@@ -133,7 +133,11 @@ as iscomplete
 ,m.form_submission_date 
 ,s.caseno
 ,s.groupname
+into StgTbl_InquiryFormsRpt
 from StgTbl_InquiryRpt s
 left join #main m
 on m.formcompleted_user=s.displayname and m.inquiry_date=s.updated_date
 
+drop table #result,#main
+
+END
