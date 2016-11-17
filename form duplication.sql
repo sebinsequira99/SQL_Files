@@ -1,16 +1,6 @@
 
 
---aaimerge
-
---International Formal Application 2015---->2869
---Domestic Formal as of 8 2015--->2891
-
---select * from formmaker_properties where form_id=2869
---select * from formmaker_properties where form_id=2891
-
---select * from formmaker_pages where form_id=2891
---select * from formmaker_pages where form_id=2896
-
+--maphha
 
 --insert into formmaker_properties( 
 --formlabel
@@ -32,9 +22,9 @@
 --,numofrecords
 --,formtype
 --,formdisplaytype)
---select 'Domestic Formal as of 8 2016'
+--select 'Birthparent Application for Services(2)'
 --,formtext
---,'28_domesticformaladoptionapplication2016_9_1'
+--,'235_birthparentapplicationforservices_2'
 --,formindex
 --,redirecturl
 --,adminalert
@@ -52,18 +42,18 @@
 --,formtype
 --,formdisplaytype
 --from formmaker_properties
---where form_id=2891
+--where form_id=2730
 
 --insert into formmaker_pages
 --(form_id
 --,pagename
 --,grouping
 --,key_id)
---select 2896
+--select 2742
 --,pagename
 --,grouping
 --,key_id from formmaker_pages
---where form_id=2891
+--where form_id=2730
 
 --insert into formmaker_fields (
 --page_id
@@ -89,12 +79,9 @@
 --,field_group_id
 --,field_format
 --,use_as_label)
---select case when page_id=6750 then 6766
---when page_id=6751 then 6767
---when page_id=6752 then 6768
---when page_id=6753 then 6769
---when page_id=6754 then 6770
---when page_id=6755 then 6771
+--select case when page_id=6523 then 6571
+--when page_id=6524 then 6572
+--when page_id=6525 then 6573
 --end
 --,type
 --,label
@@ -119,5 +106,192 @@
 --,field_format
 --,use_as_label
 --from formmaker_fields 
---where page_id in(select page_id from formmaker_pages where form_id=2891)
+--where page_id in(select page_id from formmaker_pages where form_id=2730)
+
+--select field_id,caption,name from formmaker_fields 
+--where page_id in(select page_id from formmaker_pages where form_id=2730)
+
+--select field_id,caption,name from formmaker_fields 
+--where page_id in(select page_id from formmaker_pages where form_id=2742)
+
+--insert into formmaker_fieldoptions(field_id
+--,optionname
+--,asdefault
+--,empty
+--,key_id)
+--select case
+--when field_id=151725 then 154377
+--when field_id=151726 then 154378
+--when field_id=151727 then 154379
+--when field_id=151728 then 154380
+--when field_id=151729 then 154381
+--when field_id=151730 then 154382
+--when field_id=151731 then 154383
+--when field_id=151732 then 154384
+--when field_id=151733 then 154385
+--when field_id=151734 then 154386
+--when field_id=151735 then 154387
+--when field_id=151736 then 154388
+--when field_id=151737 then 154389
+--when field_id=151738 then 154390
+--when field_id=151739 then 154391
+--when field_id=151740 then 154392
+--when field_id=151741 then 154393
+--when field_id=151742 then 154394
+--when field_id=151743 then 154395
+--when field_id=151744 then 154396
+--when field_id=151745 then 154397
+--when field_id=151746 then 154398
+--when field_id=151747 then 154399
+--when field_id=151748 then 154400
+--when field_id=151749 then 154401
+--when field_id=151750 then 154402
+--when field_id=151751 then 154403
+--when field_id=151752 then 154404
+--when field_id=151753 then 154405
+--when field_id=151755 then 154406
+--when field_id=151756 then 154407
+--when field_id=151757 then 154408
+--when field_id=151758 then 154409
+--when field_id=151759 then 154410
+--when field_id=151760 then 154411
+--when field_id=151761 then 154412
+--when field_id=151762 then 154413
+--when field_id=151763 then 154414
+--when field_id=151764 then 154415
+--when field_id=151765 then 154416
+--when field_id=151766 then 154417
+--when field_id=151767 then 154418
+--when field_id=151768 then 154419
+--when field_id=151769 then 154420
+--when field_id=151770 then 154421
+--when field_id=151771 then 154422
+--when field_id=151772 then 154423
+--when field_id=151773 then 154424
+--when field_id=151774 then 154425
+--when field_id=151775 then 154426
+--when field_id=151776 then 154427
+--when field_id=151777 then 154428
+--when field_id=151778 then 154429
+--when field_id=151779 then 154430
+--when field_id=151780 then 154431
+--when field_id=151781 then 154432
+--when field_id=151782 then 154433
+--when field_id=151783 then 154434
+--when field_id=151784 then 154435
+--when field_id=151785 then 154436
+--when field_id=151786 then 154437
+--when field_id=151787 then 154438
+--when field_id=151788 then 154439
+--when field_id=151789 then 154440
+--when field_id=151790 then 154441
+--when field_id=151791 then 154442
+--when field_id=151792 then 154443
+--when field_id=151793 then 154444
+--when field_id=151794 then 154445
+--when field_id=151795 then 154446
+--when field_id=151796 then 154447
+--when field_id=151797 then 154448
+--when field_id=151798 then 154449
+--when field_id=151799 then 154450
+--when field_id=151800 then 154451
+--when field_id=151801 then 154452
+--when field_id=151802 then 154453
+--when field_id=151803 then 154454
+--when field_id=151804 then 154455
+--when field_id=151805 then 154456
+--when field_id=151806 then 154457
+--when field_id=151807 then 154458
+--when field_id=151808 then 154459
+--when field_id=151809 then 154460
+--when field_id=151810 then 154461
+--when field_id=151811 then 154462
+--when field_id=151812 then 154463
+--when field_id=151813 then 154464
+--when field_id=151814 then 154465
+--when field_id=151815 then 154466
+--when field_id=151816 then 154467
+--when field_id=151817 then 154468
+--when field_id=151818 then 154469
+--when field_id=151819 then 154470
+--when field_id=151820 then 154471
+--when field_id=151821 then 154472
+--when field_id=151822 then 154473
+--when field_id=151823 then 154474
+--when field_id=151824 then 154475
+--when field_id=151825 then 154476
+--when field_id=151826 then 154477
+--when field_id=151827 then 154478
+--when field_id=151828 then 154479
+--when field_id=151829 then 154480
+--when field_id=151830 then 154481
+--when field_id=151831 then 154482
+--when field_id=151832 then 154483
+--when field_id=151833 then 154484
+--when field_id=151834 then 154485
+--when field_id=151835 then 154486
+--when field_id=151836 then 154487
+--when field_id=151837 then 154488
+--when field_id=151838 then 154489
+--when field_id=151839 then 154490
+--when field_id=151840 then 154491
+--when field_id=151841 then 154492
+--when field_id=151842 then 154493
+--when field_id=151843 then 154494
+--when field_id=151844 then 154495
+--when field_id=151845 then 154496
+--when field_id=151846 then 154497
+--when field_id=151847 then 154498
+--when field_id=151848 then 154499
+--when field_id=151849 then 154500
+--when field_id=151850 then 154501
+--when field_id=151851 then 154502
+--when field_id=151852 then 154503
+--when field_id=151853 then 154504
+--when field_id=151854 then 154505
+--when field_id=151855 then 154506
+--when field_id=151856 then 154507
+--when field_id=151857 then 154508
+--when field_id=151858 then 154509
+--when field_id=151859 then 154510
+--when field_id=151860 then 154511
+--when field_id=151861 then 154512
+--when field_id=151862 then 154513
+--when field_id=151863 then 154514
+--when field_id=151864 then 154515
+--when field_id=151865 then 154516
+--when field_id=151867 then 154517
+--when field_id=151868 then 154518
+--when field_id=151869 then 154519
+--when field_id=151870 then 154520
+--when field_id=151871 then 154521
+--when field_id=151872 then 154522
+--when field_id=151873 then 154523
+--when field_id=151874 then 154524
+--when field_id=151875 then 154525
+--when field_id=151876 then 154526
+--when field_id=151877 then 154527
+--when field_id=151878 then 154528
+--when field_id=151879 then 154529
+--when field_id=151880 then 154530
+--when field_id=151881 then 154531
+--when field_id=151882 then 154532
+--when field_id=151883 then 154533
+--when field_id=151884 then 154534
+--when field_id=151885 then 154535
+--when field_id=151886 then 154536
+--when field_id=151887 then 154537
+--when field_id=151888 then 154538
+--when field_id=151889 then 154539
+--when field_id=151890 then 154540
+--end
+--,optionname
+--,asdefault
+--,empty
+--,key_id 
+--from formmaker_fieldoptions
+--where field_id in(select field_id from formmaker_fields 
+--where page_id in(select page_id from formmaker_pages where form_id=2730))
+
+
 
