@@ -1,0 +1,103 @@
+
+
+--select p.desc_id as new_ID
+--,pp.desc_id as old_ID
+--,p.description
+--from mapfcs..payment_description_master p
+--inner join mapfac_old_test..payment_description_master pp
+--on p.description=pp.description
+--where p.desc_id<>pp.desc_id
+
+--insert into mapfcs..formmaker_paymentItems(
+--task_id
+--,stage_id
+--,phase_id
+--,payitem_name
+--,description
+--,category_id
+--,sub_category_id
+--,pay_amount
+--,payment_qb_line_item_id)
+--select task_id
+--,stage_id
+--,case 
+--when phase_id=1662 then 1973
+--when phase_id=1749 then 1975
+--when phase_id=1898 then 1976
+--when phase_id=1633 then 1970
+--when phase_id=1935 then 1980
+--when phase_id=1663 then 1974
+--end
+--,payitem_name
+--,description
+--,case when category_id=671 then 892
+--when category_id=656 then 894
+--when category_id=655 then 895
+--when category_id=892 then 898
+--when category_id=894 then 903
+--when category_id=660 then 904
+--when category_id=690 then 905
+--when category_id=656 then 907
+--when category_id=904 then 910
+--when category_id=905 then 912
+--when category_id=907 then 913
+--when category_id=654 then 914
+--when category_id=657 then 915
+--when category_id=658 then 916
+--when category_id=659 then 917
+--when category_id=661 then 918
+--when category_id=662 then 919
+--when category_id=663 then 920
+--when category_id=664 then 921
+--when category_id=665 then 922
+--when category_id=666 then 923
+--when category_id=692 then 924
+--when category_id=693 then 925
+--when category_id=694 then 926
+--when category_id=891 then 927
+--when category_id=893 then 928
+--when category_id=896 then 929
+--when category_id=897 then 930
+--when category_id=898 then 931
+--when category_id=899 then 932
+--when category_id=900 then 933
+--when category_id=901 then 934
+--when category_id=902 then 935
+--when category_id=903 then 936
+--when category_id=906 then 937
+--when category_id=908 then 938
+--when category_id=909 then 939
+--when category_id=910 then 940
+--when category_id=911 then 941
+--when category_id=912 then 942
+--when category_id=913 then 943
+--when category_id=914 then 944
+--when category_id=915 then 945
+--when category_id=916 then 946
+--when category_id=917 then 947
+--when category_id=918 then 948
+--when category_id=919 then 949
+--when category_id=920 then 950
+--when category_id=921 then 951
+--when category_id=922 then 952
+--when category_id=923 then 953
+--when category_id=924 then 954
+--when category_id=925 then 955
+--when category_id=926 then 956
+--when category_id=927 then 957
+--when category_id=928 then 958
+--when category_id=929 then 958
+--when category_id=928 then 959
+--when category_id=929 then 959
+--when category_id=930 then 960
+--when category_id=931 then 961
+--when category_id=932 then 962
+--when category_id=933 then 963
+--when category_id=934 then 964
+--when category_id=935 then 965
+--end
+--,sub_category_id
+--,pay_amount
+--,payment_qb_line_item_id
+--from mapfac_old_test..formmaker_paymentItems
+
