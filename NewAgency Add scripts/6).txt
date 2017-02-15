@@ -3,4 +3,4 @@
 
 copy from mapmachformHHA to mapmachformBASE
 
-2)update user_id in and ap_forms
+2)update user_id in ap_forms

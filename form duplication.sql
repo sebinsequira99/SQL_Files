@@ -1,6 +1,6 @@
 
 
---maphha
+--mapaoi
 
 --insert into formmaker_properties( 
 --formlabel
@@ -22,9 +22,9 @@
 --,numofrecords
 --,formtype
 --,formdisplaytype)
---select '4 BM Social Medical History Pinks(2)'
+--select 'Agency Policies revised 7 14(2)'
 --,formtext
---,'235_4bmsocialmedicalhistorypinks_2'
+--,'83_agencypoliciesrevised714_2'
 --,formindex
 --,redirecturl
 --,adminalert
@@ -42,18 +42,21 @@
 --,formtype
 --,formdisplaytype
 --from formmaker_properties
---where form_id=2738
+--where form_id=2730
 
 --insert into formmaker_pages
 --(form_id
 --,pagename
 --,grouping
 --,key_id)
---select 2752
+--select 2736
 --,pagename
 --,grouping
 --,key_id from formmaker_pages
---where form_id=2738
+--where form_id=2730
+
+--select * from formmaker_pages where form_id in(2730
+--,2736)
 
 --insert into formmaker_fields (
 --page_id
@@ -80,19 +83,12 @@
 --,field_format
 --,use_as_label)
 --select case 
---when page_id=6551   then 6593
---when page_id=6552	 then 6594
---when page_id=6553	 then 6595
---when page_id=6554	 then 6596
---when page_id=6555	 then 6597
---when page_id=6556	 then 6598
---when page_id=6557	 then  6599
---when page_id=6558	 then 6600
---when page_id=6559	 then 6601
---when page_id=6560	 then 6602
---when page_id=6561	 then  6603
---when page_id=6562	 then 6604
---when page_id=6563	 then 6605
+--when field_id=6551  then 6582
+--when field_id=6552 then 6583
+--when field_id=6553 then 6584
+--when field_id=6554 then 6585
+--when field_id=6555 then 6586
+--when field_id=6556 then 6587
 --end
 --,type
 --,label
@@ -117,7 +113,7 @@
 --,field_format
 --,use_as_label
 --from formmaker_fields 
---where page_id in(select page_id from formmaker_pages where form_id=2738)
+--where page_id in(select page_id from formmaker_pages where form_id=2730)
 
 --select field_id,caption,name from formmaker_fields 
 --where page_id in(select page_id from formmaker_pages where form_id=2738)
