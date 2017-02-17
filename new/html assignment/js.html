@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Product Function</p>
+
+<p id="product_function"></p>
+
+<p>Sum Function</p>
+
+<p id="sum_function"></p>
+
+<p>Array count after push</p>
+
+<p id="array_push"></p>
+
+<p>Array element deleted after pop</p>
+
+<p id="array_pop"></p>
+
+<p>Array element deleted after shift</p>
+
+<p id="array_shift"></p>
+
+<p>Array count after unshift</p>
+
+<p id="array_unshift"></p>
+
+<p> Sliced Array</p>
+
+<p id="array_slice"></p>
+
+<p>String Search</p>
+
+<p id="string_search"></p>
+
+<p>Position of searched keyword</p>
+
+<p id="position"></p>
+
+<p>foreach operation on array</p>
+
+<p id="for_each"></p>
+
+<p>result after foreach operation</p>
+
+<p id="for_each_result"></p>
+
+<p>filter operation on array</p>
+
+<p id="filter"></p>
+
+<p>result after filter operation</p>
+
+<p id="filtered"></p>
+
+<p>result after join operation</p>
+
+<p id="join"></p>
+
+<script>
+
+// Function Definition,Calling
+
+function product(a,b) {
+return a * b ;
+} 
+var p=product(5,6);
+document.getElementById("product_function").innerHTML ="product= " + p;
+
+
+// Hoisting
+
+function sum(a,b) {
+return a + b ;
+} 
+s=sum(3,4);
+document.getElementById("sum_function").innerHTML ="sum= " + s;
+var s;
+
+
+// Push,Pop,Shift,Unshift,Slice operations on array
+
+var animals = ["Elephant", "Lion", "Tiger"];
+var push_animals = animals.push("Deer", "Wolf", "Cat");
+var pop_animals = animals.pop();
+var shift_animals = animals.shift();
+var unshift_animals = animals.unshift("Rabbit","Dog");
+var slice_animals = animals.slice(2,5);
+
+// Search operation
+
+var string = "sentence to be searched";
+var n = string.search("searched");
+
+// Foreach operation
+
+var numbers = [10, 11, 12];
+var sum = 0;
+numbers.forEach(
+    function addNumber(value) { sum = sum + value; }
+);
+
+
+// Filter operation
+
+var arr = [12, "abc", 10, "def"];
+
+
+// Filtering the string values
+
+var result = arr.filter(
+    function (value) {
+        return (typeof value == 'string');
+    }
+);
+
+// Join operation
+var join_arr = arr.join(" and ");
+
+// Sort operation
+var sort_animals = animals.sort();
+
+// Reverse operation
+var reverse_animals = animals.reverse();
+
+document.getElementById("array_push").innerHTML = push_animals;
+document.getElementById("array_pop").innerHTML = pop_animals;
+document.getElementById("array_shift").innerHTML = shift_animals;
+document.getElementById("array_unshift").innerHTML = unshift_animals;
+document.getElementById("array_slice").innerHTML = slice_animals;
+document.getElementById("string_search").innerHTML = string;
+document.getElementById("position").innerHTML = n;
+document.getElementById("for_each").innerHTML = numbers;
+document.getElementById("for_each_result").innerHTML = "sum= " + sum;
+document.getElementById("filter").innerHTML = arr;
+document.getElementById("filtered").innerHTML = result;
+document.getElementById("join").innerHTML = join_arr;
+
+</script>
+</body>
+</html>
+

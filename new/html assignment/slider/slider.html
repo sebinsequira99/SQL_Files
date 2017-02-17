@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/test.css">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+ <script type="text/javascript">
+ $(document).ready(function() {
+          
+  var currentPosition = 0;
+  var slideWidth = 500;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+  var slideShowInterval;
+  var speed = 3000;
+
+  
+  slideShowInterval = setInterval(changePosition, speed);
+  
+  slides.wrapAll('<div id="slidesHolder"></div>')
+  
+  slides.css({ 'float' : 'left' });
+  
+  $('#slidesHolder').css('width', slideWidth * numberOfSlides);
+  
+  
+  function changePosition() {
+   if(currentPosition == numberOfSlides - 1) {
+    currentPosition = 0;
+   } else {
+    currentPosition++;
+   }
+   moveSlide();
+  }
+  
+  
+  function moveSlide() {
+    $('#slidesHolder')
+      .animate({'marginLeft' : slideWidth*(-currentPosition)});
+  }
+
+ });
+ </script>
+ <div id="slideshow">
+     <div id="slideshowWindow">
+          <div class="slide">
+              <img src="bg_slide01.png" />
+          </div><!--/slide->-->
+          <div class="slide">
+              <img src="bg_slide02.png" />
+          </div>
+              <img src="bg_slide03.png"/>
+          </div><div class="slide">
+              <img src="bg_slide01.png"/>
+          </div><div class="slide">
+              <img src="bg_slide02.png"/>
+          </div><div class="slide">
+              <img src="bg_slide03.png"/>
+          </div>
+          <div class="slide">
+              <img src="bg_slide01.png"/>
+          </div><!--/slide-->
+        </div><!--/slideshowWindow-->
+ </div><!--/slideshow-->
+</body>
+</html>
+

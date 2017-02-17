@@ -1,0 +1,487 @@
+
+
+/*	Document    : Styles.css
+    Created on  : 17/02/2015
+    Author      : Sebin Sequira
+    Description : Style sheet for Tech Umber Page */
+
+/* --------------------RESET STYLE SHEET------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ 	margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#fcfcfc;
+	background-color:#F9F8E9;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+	background-color:#373737;
+	width:100%;
+	height:65px;
+}
+
+#header_logo{
+	margin-left:75px;
+	margin-top:20px;
+	width:173px;
+	height:25px;
+}
+
+
+/* Hyperlink Styles: */
+
+/* unvisited nav link */
+a.header_nav_cl01:link, a.header_nav_cl01:visited{
+    color: #AAA8A9;
+    text-decoration: none;
+    background-color: #373737;
+}
+
+/* mouse over nav link */
+a.header_nav_cl01:hover, a.header_nav_cl01:active{
+    color: #D7D5BC;
+    text-decoration: none;
+    background-color: #494949;
+}
+
+/* unvisited recent link */
+a.contentright_cl01:link, a.contentright_cl01:visited{
+    color: #383838;
+    text-decoration: none;
+    background-color: #F9F8E9;
+    font-weight:bolder;
+    font-style: italic;
+}
+
+/* mouse over recent link */
+a.contentright_cl01:hover, a.contentright_cl01:active{
+    color: #F9F8E9;
+    text-decoration: none;
+    background-color: #383838;
+    font-weight:bolder;
+}
+
+/* unvisited footer link */
+a.footer_cl01:link, a.footer_cl01:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #292929;
+    width:140px;
+    height:20px;
+    display:inline-block;
+}
+
+/* mouse over footer link */
+a.footer_cl01:hover, a.footer_cl01:active {
+    color: #F2EDC1;
+    text-decoration: none;
+    background-color: #383838;
+}
+
+/* unvisited footer link */
+a.footer_cl02:link, a.footer_cl02:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #292929;
+    width:140px;
+    height:20px;
+    display:inline-block;
+    margin-top:2px;
+}
+
+/* mouse over footer link */
+a.footer_cl02:hover, a.footer_cl02:active {
+    color: #F2EDC1;
+    text-decoration: none;
+    background-color: #383838;
+}
+
+
+/* unvisited read link */
+a.contentleft_cl02{
+	background: url('btn_readmore_normal.png') center top no-repeat;
+	width:77px; 
+	height:19px;
+	display:inline-block;
+	margin-left:25px;
+}
+
+/* mouse over read link */
+a.contentleft_cl02:hover {
+	background-image: url('btn_readmore_active.png');
+	width:77px; 
+	height:19px;
+}
+
+/* Headings: */
+
+h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+nav{
+	margin-right:70px;
+	margin-top:15px;
+	float:right;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	display:block;
+	float:left;
+	font-size:1.25em;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-transform:capitalize;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+
+/* Article styles: */
+
+#main{
+	width:1020px;
+	margin:auto;
+	position:relative;
+}
+
+
+#content_id06{
+	background-color:#373737;
+	width:1020px;
+	height:36px;
+	display:block;
+}
+
+ol{
+    list-style-image: url('icon_bullet_normal.png');
+    list-style-position: inside;
+}
+
+ol li:hover{
+	list-style-image: url('icon_bullet_active.png');
+}
+
+#banner{
+	width:100%;
+	color:black;
+	background-image: url('bg_body.jpg');
+	overflow:hidden;
+	height:315px;
+}
+
+.section_cl01{
+	width: 500px;
+ 	height: auto;
+ 	position:relative;
+ 	float:left;
+}
+
+#content_id04{
+	width:350px;
+	height:210px;
+	float:left;
+}
+
+#content_id07{
+	width:540px;
+	height:282px;
+	background-image: url('bg_slideshow.jpg');
+	float:left;
+}
+
+#content_id01{
+	position:absolute;
+	top:102px;
+	left:470px;
+}
+
+#content_id08{
+	width:460px;
+	height:210px;
+	background-image: url('bg_slide01.png');
+}
+
+#content_id03{
+	position:absolute;
+	top:275px;
+	right:65px;
+}
+
+#content_id02{
+	position:absolute;
+	top:275px;
+	right:115px;
+}
+
+#content_id07{
+	position:absolute;
+	top:275px;
+	left:75px;
+}
+
+#content_id05{
+	position:absolute;
+	top:245px;
+	left:210px;
+}
+
+#content{
+	width:100%;
+	height:670px;
+	overflow:hidden;
+}
+
+.content_cl01{
+ 	width: 300px;
+ 	height: auto;
+ 	position:relative;
+ 	float:left;
+ 	margin-left:30px;
+ 	margin-top:40px;
+ 	padding-bottom:50px;
+ 	color:black;
+}
+
+p.contentleft_cl01{
+	font-size:90%;
+	margin-top:16px;
+}
+
+p.contentmid_cl01{
+	font-size:80%;
+}
+
+#content h3{
+	display:inline;
+	margin-left:10px;
+}
+
+#contentmid_id02{
+	margin-top: -12px;
+}
+
+#contentmid_id03{
+	margin-top: -16px;
+}
+
+#contentright_id04{
+	display:inline;
+	margin-left:5px;
+	font-size: 150%;
+	font-weight: lighter;
+}
+
+#contentright_id02{
+	background-color: #373737;
+	color:white;
+	margin-top:60px;
+	width:275px;
+	height:135px;
+	border-radius: 8px;
+}
+
+#contentright_id03{
+	width:240px;
+	height:100px;
+	padding-top:15px;
+	padding-left:15px;
+	padding-bottom:15px;
+	padding-right:15px;
+}
+
+#contentright_id06{
+	margin-bottom:20px;
+}
+
+#contentright_id07{
+	margin-top:-20px;
+}
+
+#contentright_id05{
+	font-size:90%;
+	font-weight:lighter;
+	margin-top:10px;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	font-size:0.825em;
+	background-color:#373737;
+	width:1020px;
+	height:130px;
+}
+
+footer p{
+	text-align:right;
+}
+
+#footer_id01{
+	position:absolute;
+ 	bottom:80px;
+ 	left:60px;
+}
+
+
+footer div{
+	display:inline;
+}
+
+#footer_sec1{
+	display:block;
+	color:white;
+	position:absolute;
+ 	bottom:40px;
+ 	left:60px;
+ }
+
+#footer_sec2{
+	display:block;
+	position:absolute;
+ 	bottom:20px;
+ 	left:60px;
+}
+
+#footer_logo{
+	position:absolute;
+ 	bottom:60px;
+ 	right:-20px;
+
+}
+
+#footer_id03{
+	position:absolute;
+ 	bottom:25px;
+ 	right:-20px;
+}
+
+#footer_id02{
+	position:absolute;
+	bottom:20px;
+	left:60px;
+}
+
